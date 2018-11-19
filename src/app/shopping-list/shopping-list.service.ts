@@ -10,26 +10,28 @@ export class ShoppingListService {
         new Ingredient('Tomatoes',10)
       ];
 
-      getIngredients() {
+      /*getIngredients() {
           return this.ingredients.slice();
-      }
+      }*/
 
       getIngredient(index: number) {
         return this.ingredients[index];
       }
 
-      addIngredients(ingredient: Ingredient) {
+      /*addIngredients(ingredient: Ingredient) {
         this.ingredients.push(ingredient)
         this.ingredientsChanged.next(this.ingredients.slice())
-      }
+      }*/
 
       addIngredientsToShoppingList(ingredients : Ingredient[]) {
           /*for(let ingredient of ingredients) {
             this.addIngredients(ingredient)
           }*/
 
-          this.ingredients.push(...ingredients)
-          this.ingredientsChanged.next(this.ingredients.slice())
+          /*this.ingredients.push(...ingredients)
+          this.ingredientsChanged.next(this.ingredients.slice())*/
+
+          
       }
 
       updateIngredient(index: number, newIngredient: Ingredient) {
